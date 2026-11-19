@@ -1,0 +1,47 @@
+[
+  {
+    "id": "C-1001",
+    "name": "Juniper Trail Outfitters",
+    "contact": "Ava Lindqvist",
+    "email": "ava@juniper-trail.example",
+    "city": "Portland",
+    "since": "2024-03-14",
+    "paymentNotes": "Net 30 approved by finance; card on file (finance only)"
+  },
+  {
+    "id": "C-1002",
+    "name": "Cedar & Stone Supply",
+    "contact": "Mateo Ruiz",
+    "email": "mateo@cedar-stone.example",
+    "city": "Tacoma",
+    "since": "2024-07-02",
+    "paymentNotes": "Two late payments in 2025; require prepayment over 5000 USD"
+  },
+  {
+    "id": "C-1003",
+    "name": "Northfork Paddle Co.",
+    "contact": "Priya Nair",
+    "email": "priya@northfork.example",
+    "city": "Bend",
+    "since": "2025-01-20",
+    "paymentNotes": "Disputed invoice INV-2207 under review"
+  },
+  {
+    "id": "C-1004",
+    "name": "Lantern Peak Rentals",
+    "contact": "Sam Okafor",
+    "email": "sam@lantern-peak.example",
+    "city": "Boise",
+    "since": "2025-06-09",
+    "paymentNotes": "Pays by ACH; bank details held by finance only"
+  },
+  {
+    "id": "C-1005",
+    "name": "Driftwood Camp Store",
+    "contact": "Lena Fischer",
+    "email": "lena@driftwood.example",
+    "city": "Astoria",
+    "since": "2025-10-30",
+    "paymentNotes": "New account; credit check pending"
+  }
+]
