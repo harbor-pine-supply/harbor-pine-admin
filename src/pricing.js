@@ -7,7 +7,10 @@ export function lineTotal(unitPrice, qty, discountPct = 0) {
   // cent would round down. Trim that noise (to 6 decimal places of a cent) before
   // rounding, so half a cent rounds up.
   const cents = Number((amount * 100).toFixed(6));
-  return Math.round(cents) / 100;
+  // Math.round sends -x.5 toward zero, so round a credit line (negative amount) by
+  // its size: half a cent rounds away from zero, the same as a charge.
+  const rounded = cents < 0 ? -Math.round(-cents) : Math.round(cents);
+  return rounded / 100;
 }
 
 // The invoice total: every line, plus the state's sales tax.

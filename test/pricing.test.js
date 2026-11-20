@@ -23,6 +23,15 @@ test("just under half a cent still rounds down", () => {
   assert.equal(lineTotal(4.2249, 1), 4.22);
 });
 
+test("a credit line rounds half a cent away from zero, like a charge", () => {
+  assert.equal(lineTotal(-8.45, 1, 50), -4.23);
+  assert.equal(lineTotal(-1.005, 1), -1.01);
+});
+
+test("a credit line just under half a cent still rounds toward zero", () => {
+  assert.equal(lineTotal(-4.2249, 1), -4.22);
+});
+
 test("the invoice adds sales tax for the state", () => {
   assert.equal(invoiceTotal([{ unitPrice: 19.99, qty: 3, discountPct: 15 }], "WA"), 54.28);
 });
