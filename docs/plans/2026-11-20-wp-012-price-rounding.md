@@ -8,3 +8,7 @@ Acceptance criteria (each one testable):
 2. Every existing test passes unchanged.
 How we'll verify: npm test, and the person reads the diff: two files at most.
 Restore point: pre-wp-012 (git tag made before starting)
+
+## A person's addition at the merge gate
+Found by the developer's own check, not by the reviewer: lineTotal(-8.45, 1, 50) returned -4.22; a credit line should round the same way as a charge, to -4.23.
+3. A credit line (a negative amount) rounds half a cent away from zero, the same as a charge: lineTotal(-8.45, 1, 50) is -4.23.
