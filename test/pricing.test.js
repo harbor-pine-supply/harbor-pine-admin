@@ -10,6 +10,10 @@ test("a discount comes off the line", () => {
   assert.equal(lineTotal(19.99, 3, 15), 50.97);
 });
 
+test("half a cent rounds up: an $8.45 item at half price costs $4.23", () => {
+  assert.equal(lineTotal(8.45, 1, 50), 4.23);
+});
+
 test("the invoice adds sales tax for the state", () => {
   assert.equal(invoiceTotal([{ unitPrice: 19.99, qty: 3, discountPct: 15 }], "WA"), 54.28);
 });
