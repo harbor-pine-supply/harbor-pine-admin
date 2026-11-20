@@ -2,5 +2,10 @@
   "name": "harbor-pine-admin",
   "private": true,
   "type": "module",
-  "scripts": { "test": "node --test" }
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "lodash": "4.17.20"
+  }
 }
